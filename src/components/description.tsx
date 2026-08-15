@@ -1,6 +1,7 @@
 import { ImageInfo } from "./slideshow";
 
-interface DescriptionProps {
+export interface Project {
+    id: number;
     title: string;
     dates: string[];
     link?: string; 
@@ -10,7 +11,7 @@ interface DescriptionProps {
     images:ImageInfo[];
 }
 
-export function Description({title="", dates=[], link, description="", source, tools=[], ...props}: DescriptionProps) {
+export function Description({title="", dates=[], link, description="", source, tools=[], ...props}: Project) {
     console.log(props)
     return (
         <div className='w-full text-xl flex flex-col gap-4'>

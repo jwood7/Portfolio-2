@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Description } from "@/components/description";
 import { Slideshow } from "@/components/slideshow";
 import { useState } from "react";
+import { ChangeProject } from "@/components/changeProject";
+
 
 const testData = [
   {
-    "id": 1,
+    "id": 0,
     "title": "Title1",
     "dates": ["1/11","1/22"],
     "link": "https://jacobdouglaswood.com",
@@ -16,7 +18,7 @@ const testData = [
     "images": [{"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "Title2",
     "dates": ["1/11","1/22"],
     "link": "https://jacobdouglaswood.com",
@@ -25,7 +27,7 @@ const testData = [
     "images": []
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Title3",
     "dates": ["1/11","1/22"],
     "link": "https://jacobdouglaswood.com",
@@ -37,12 +39,20 @@ const testData = [
 
 export default function Home() {
   const [project, setProject] = useState(testData[0]);
+  function setProjectById(id: number){
+    // change this based on how retrieved from backend. For now, use index as ID
+    if (id >= testData.length) return
+    setProject(testData[id]);
+
+  }
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full flex-row items-center justify-center gap-16 bg-white dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans ">
+      <main className="flex flex-1 w-full flex-row items-center justify-center gap-16">
         <Slideshow images={project.images} />
-        <div className='h-screen bg-green-600 flex align-items-center justify-center flex-col w-[450px] px-16'>
+        <div className='h-screen bg-green-600 flex align-items-center justify-between flex-col w-[450px] px-16 py-12'>
+          <ChangeProject isNext={false} currProject={project} numProjects={testData.length} setProjectById={setProjectById}/>
           <Description {...project}/>
+          <ChangeProject isNext currProject={project} numProjects={testData.length} setProjectById={setProjectById}/>
         </div>
       </main>
     </div>
@@ -50,8 +60,7 @@ export default function Home() {
 }
 
 // LAYOUT: 
-// Header
-// Buttons
+// Buttons (add icons)
 // Socials
 // Slideshow arrows
 
@@ -66,3 +75,4 @@ export default function Home() {
 // need to keep index of current project
 // need to change index on next/current project button click
 // need to set up slideshow
+// Show all projects
