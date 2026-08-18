@@ -24,19 +24,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav className="absolute top-8 flex justify-center w-full gap-16">
-          <div className="w-[50vw]">
-            <ul className="flex items-center justify-between w-2xl">
-              <li className="text-6xl">Jacob Wood</li>
-              <li><a className="opacity-50 hover:opacity-100" href="/about">About</a></li>
-              {/* <li><a href="/">Software and Data</a></li> */}
-              <li><a className="opacity-50 hover:opacity-100" href="/game-development">Game Dev</a></li>
-              <li><a className="opacity-50 hover:opacity-100" href="/art">Art</a></li>
-            </ul>
-          </div>
-          <div className="w-[450px]"/>
-        </nav>
-        {children}</body>
+        <div className="absolute bg-linear-to-t from-green-600 via-emerald-950 to-black w-screen h-screen z-0"/>
+        <div className="absolute bg-linear-to-r from-black to-black/0 w-screen h-screen z-0"/>
+        {children}
+      </body>
     </html>
   );
 }

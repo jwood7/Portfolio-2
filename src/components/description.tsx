@@ -25,7 +25,7 @@ export function Description({title="", dates=[], link, description="", source, t
 
             <div className='flex gap-5 w-full'>
                 {tools.map((tool, index) => 
-                    <div key={tool+index}>{tool}</div>
+                    <div key={tool+index} className="bg-green-600 py-1 px-5 rounded-md">{tool}</div>
                 )}
             </div>
             <div>{description}</div>
