@@ -3,32 +3,32 @@ export function Footer(){
     return (
     <footer className="flex justify-center w-full gap-16">
         <div className="flex justify-center w-[50vw] gap-1">
-            <a className="flex flex-col justify-end items-end">
+            <a className="flex flex-col justify-end items-end gap-1">
                 <Image
-                    src={"/icons/github-mark-white 2.png"}
+                    src={"/icons/github.svg"}
                     alt="Github Icon"
-                    height={23}
-                    width={23}
+                    height={29}
+                    width={29}
                 />
                 <div> Github </div>
             </a>
             
-            <a className="flex flex-col justify-end items-center">
+            <a className="flex flex-col justify-end items-center gap-1">
                 <Image
-                    src={"/icons/github-mark-white 2.png"}
-                    alt="Github Icon"
-                    height={23}
-                    width={23}
+                    src={"/icons/itch.svg"}
+                    alt="Itch.io Icon"
+                    height={29}
+                    width={29}
                 />
                 <div>| Itch.io |</div>
             </a>
             
-            <a className="flex flex-col justify-end items-start">
+            <a className="flex flex-col justify-end items-start gap-1">
                 <Image
-                    src={"/icons/github-mark-white 2.png"}
-                    alt="Github Icon"
-                    height={23}
-                    width={23}
+                    src={"/icons/linkedin.svg"}
+                    alt="Linkedin Icon"
+                    height={30}
+                    width={30}
                 />
                 <div> Linkedin </div>
             </a>

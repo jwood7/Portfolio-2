@@ -1,4 +1,5 @@
 import { ImageInfo } from "./slideshow";
+import Image from "next/image";
 
 export interface Project {
     id: number;
@@ -19,8 +20,28 @@ export function Description({title="", dates=[], link, description="", source, t
             {dates.length >= 2 && <h2 className='text-4xl'>{dates[0]}-{dates[1]}</h2>}
             
             <div className='flex gap-5 w-full'>
-                {link && <a href={link}>link</a> }
-                {source && <a href={source}>github</a> }
+                {link && 
+                    <a href={link} className="flex gap-2">
+                        <Image
+                            width={30}
+                            height={30}
+                            src={"/icons/Link.png"}
+                            alt={"Link Icon"}
+                        />    
+                        <div>Link</div>
+                    </a> 
+                }
+                {source && 
+                    <a href={source}  className="flex gap-2">
+                        <Image
+                            width={30}
+                            height={30}
+                            src={"/icons/github.svg"}
+                            alt={"Github Icon"}
+                        />    
+                        <div>Github</div>
+                    </a> 
+                }
             </div>
 
             <div className='flex gap-5 w-full'>

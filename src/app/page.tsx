@@ -17,7 +17,7 @@ const testData = [
     "source": "https://github.com/jwood7",
     "tools": ["python", "javascript"],
     "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
+    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
   },
   {
     "id": 1,
@@ -26,7 +26,7 @@ const testData = [
     "link": "https://jacobdouglaswood.com",
     "tools": ["python", "javascript"],
     "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
+    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
   },
   {
     "id": 2,
@@ -35,7 +35,7 @@ const testData = [
     "link": "https://jacobdouglaswood.com",
     "tools": ["python", "javascript"],
     "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
+    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
   },
 ]
 
@@ -66,10 +66,7 @@ export default function Home() {
 }
 
 // VISUALS:
-// Icons next to link and source
 // Fix colors/theme 
-// Socials icons
-// Arrow icons
 // Animations on slide and project change
 
 // FUNCTIONALITY: 

@@ -1,7 +1,7 @@
 export function Header(){
     return (
         <nav>
-            <div className="flex items-center justify-center xs:justify-start max-w-2xl flex-wrap gap-[2vw]">
+            <div className="flex items-center justify-start xs:justify-start max-w-2xl flex-wrap gap-[2vw]">
                 <div className="text-6xl">Jacob Wood</div>
                 <ul className="flex items-center justify-between gap-[2vw]">
                     <li><a className="opacity-50 hover:opacity-100" href="/about">About</a></li>
