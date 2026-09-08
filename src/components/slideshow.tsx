@@ -11,14 +11,15 @@ export function Slideshow({images}: {images: ImageInfo[]}) {
     const [currImage, setCurrImage] = useState(0);
     return (
         <div className="flex flex-col items-center">
-            <Image
-                width={0}
-                height={0}
+            <div className="relative w-[50vw] h-[50vh]">
+                <Image
+                fill
                 src={images[currImage].url}
                 alt={images[currImage].alt}
+                className="object-contain"
                 sizes="50vw"
-                className="w-full h-auto"
-            />
+                />
+            </div>
             {images.length > 1 && 
                 <div className="flex items-center gap-2 justify-center py-5">
                     <button onClick={() => setCurrImage(currImage > 0 ? currImage - 1 : images.length - 1)}>

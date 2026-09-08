@@ -1,0 +1,18 @@
+  {
+    "id": 0,
+    "title": "Website: Spotify Matching Site",
+    "dates": ["Fall 2022"],
+    "source": "https://github.com/jwood7/SpotifyMatchSite",
+    "tools": ["React", "Express", "Javascript", "Socket.io"],
+    "description": "A website that matches you with a friend based on your Spotify listening history. Created for Web Development III during my bachelor's degree with a group of 5.",
+    "images": [
+      {"url": "/images/software/0_spotify_matching_site/Thotify1.png", "alt":"Spotify website matching page home screenshot"},
+      {"url": "/images/software/0_spotify_matching_site/Thotify2.png", "alt":"Spotify website registration page screenshot"},
+      {"url": "/images/software/0_spotify_matching_site/Thotify3.png", "alt":"Spotify website profile page screenshot"},
+      {"url": "/images/software/0_spotify_matching_site/Thotify4.png", "alt":"Spotify website music page screenshot"},
+      {"url": "/images/software/0_spotify_matching_site/Thotify5.png", "alt":"Spotify website matching page screenshot"},
+      {"url": "/images/software/0_spotify_matching_site/Thotify6.png", "alt":"Spotify website chat page screenshot"}
+
+    ],
+    "thumbnail": {"url": "/images/software/0_spotify_matching_site/ThotifyThumb.png", "alt": "Screenshot of spotify matching site"}
+  }

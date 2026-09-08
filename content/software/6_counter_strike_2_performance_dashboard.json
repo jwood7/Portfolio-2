@@ -1,0 +1,22 @@
+{
+  "id": 6,
+  "title": "Visualization: Counter-Strike 2 Performance Dashboard",
+  "dates": ["Spring 2025"],
+  "link": "https://www.youtube.com/watch?v=VSrRcAP2UTw&list=PLyCRt3MN8s8Ng29EWwkYkrBgyqsGPtgAe&index=17",
+  "tools": ["D3"],
+  "description": "An interactive visualization of personal Counter-Strike 2 performance data, created in Spring 2025 for CSE 564 Visualization. The project was later used as an example for future students on the course website.",
+  "images": [
+    {
+      "url": "/images/software/6_counter_strike_2_performance_dashboard/Visualization1.png",
+      "alt": "Counter-Strike 2 performance dashboard"
+    },
+    {
+      "url": "/images/software/6_counter_strike_2_performance_dashboard/Visualization_Report.png",
+      "alt": "Counter-Strike 2 performance dashboard report"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/6_counter_strike_2_performance_dashboard/VisualizationThumb.png",
+    "alt": "Screenshot of Counter-Strike 2 performance dashboard"
+  }
+}

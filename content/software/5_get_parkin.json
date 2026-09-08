@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "title": "Web Design: GetParkin",
+  "dates": ["Spring 2024"],
+  "link": "https://www.figma.com/file/G2I6Ch6BnQPilwrtgFLn7O/Untitled?type=design&node-id=101-826&mode=design&t=yDr4Fc2xnrDtSjAc-0",
+  "tools": ["Figma", "CSS"],
+  "description": "A frontend design for a mobile parking app accesible on web, created for a contract with MindIT. Designed in Figma and later implemented with CSS.",
+  "images": [
+    {
+      "url": "/images/software/5_get_parkin/ParkingApp1.png",
+      "alt": "Parking Assistant mobile design"
+    },
+    {
+      "url": "/images/software/5_get_parkin/ParkingApp2.png",
+      "alt": "Parking Assistant mobile design"
+    },
+    {
+      "url": "/images/software/5_get_parkin/ParkingApp3.png",
+      "alt": "Parking Assistant mobile design"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/5_get_parkin/ParkingAppThumb.png",
+    "alt": "Screenshot of Parking Assistant mobile design"
+  }
+}

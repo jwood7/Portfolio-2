@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "title": "Discord Bot: Balance Bot",
+  "dates": ["Fall 2023"],
+  "source": "https://github.com/jwood7/BalanceBot",
+  "tools": ["Python", "REST APIs", "Discord"],
+  "description": "A Discord bot that connects to two separate APIs to gather player statistics and balance players between teams.",
+  "images": [
+    {
+      "url": "/images/software/2_balancebot/BalanceBot.png",
+      "alt": "Balance Bot interface"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/2_balancebot/BalanceBot.png",
+    "alt": "Screenshot of Balance Bot"
+  }
+}

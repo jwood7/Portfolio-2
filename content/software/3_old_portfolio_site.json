@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "title": "Website: Previous Portfolio Site",
+  "dates": ["Winter 2023"],
+  "source": "https://github.com/jwood7/Portfolio-Site",
+  "tools": ["React", "NGINX", "Ubuntu", "DigitalOcean"],
+  "description": "A React application that displays my game design, art, and coding projects. Hosted on a DigitalOcean Droplet using NGINX and Ubuntu.",
+  "images": [
+    {
+      "url": "/images/software/3_old_portfolio_site/PortfolioWebsite.png",
+      "alt": "Portfolio website"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/3_old_portfolio_site/PortfolioWebsiteThumb.png",
+    "alt": "Screenshot of portfolio website"
+  }
+}

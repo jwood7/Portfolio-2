@@ -1,0 +1,19 @@
+{
+  "id": 4,
+  "title": "Website: Beauty Plus",
+  "dates": ["2024"],
+  "link": "https://beautyplusnetwork.org/",
+  "source": "https://github.com/jwood7/beauty-plus-network",
+  "tools": ["Gatsby", "React", "TypeScript", "NGINX", "Ubuntu"],
+  "description": "A website built for a contract with the Beauty Plus Network using Gatsby, React, and TypeScript, based on an older WordPress site. Hosted on a DigitalOcean Droplet using NGINX and Ubuntu.",
+  "images": [
+    {
+      "url": "/images/software/4_beauty_plus/Beauty_Plus.png",
+      "alt": "Beauty Plus Network website"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/4_beauty_plus/Beauty_Plus.png",
+    "alt": "Screenshot of Beauty Plus Network website"
+  }
+}

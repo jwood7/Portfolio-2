@@ -1,0 +1,12 @@
+  {
+    "id": 1,
+    "title": "Discord Bot: Votebot",
+    "dates": ["Summer 2023"],
+    "source": "https://github.com/jwood7/VoteBot",
+    "tools": ["Python", "Discord"],
+    "description": "A discord bot that allows users to rate Counterstrike maps on a scale of 1-5 on the site stats.geekfestclan.com, and then displays the results. It also retrieves the workshop id of the map for admins to use to open the map in-game.",
+    "images": [
+      {"url": "/images/software/1_votebot/VoteBot.png", "alt":"Screenshot of Discord with a bot asking the user to vote on Counterstrike 2 maps"}
+    ],
+    "thumbnail": {"url": "/images/software/1_votebot/VoteBot.png", "alt":"Screenshot of Discord with a bot asking the user to vote on Counterstrike 2 maps"}
+  }
