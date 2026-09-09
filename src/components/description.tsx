@@ -18,9 +18,9 @@ export interface Project {
 export function Description({title="", dates=[], link, description="", source, tools=[], ...props}: Project) {
     console.log(props)
     return (
-        <div className='w-full text-xl flex flex-col gap-4'>
-            <h1 className='text-6xl'>{title}</h1>
-            {dates.length >= 1 && <h2 className='text-4xl'>{dates[0]}{dates.length >= 2 && `-${dates[1]}`}</h2>}
+        <div className='w-full md:text-xl flex flex-col gap-4'>
+            <h1 className='text-2xl md:text-6xl'>{title}</h1>
+            {dates.length >= 1 && <h2 className='text-xl md:text-4xl'>{dates[0]}{dates.length >= 2 && `-${dates[1]}`}</h2>}
             
             <div className='flex gap-5 w-full'>
                 {link && 

@@ -51,6 +51,8 @@ export function PortfolioPage() {
     id: string;
   }>();
 
+  const [descriptionOpen, setDescriptionOpen] = useState(false);
+
   const router = useRouter();
 
   const type = params.type;
@@ -74,38 +76,94 @@ export function PortfolioPage() {
     return <div>Project not found</div>;
   }
 
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans z-10">
-      <main className="flex flex-1 w-full flex-row items-center justify-center gap-[4vw]">
+return (
+  <div className="flex flex-col flex-1 items-center justify-center font-sans z-10">
+    <main className="relative flex flex-1 w-full flex-col md:flex-row items-center justify-center gap-[4vw]">
 
-        <div className="flex w-[50vw] flex-col justify-between h-dvh py-8">
-          <Header />
-          <Slideshow images={currProject.images} />
-          <Footer />
+      {/* Main content */}
+      <div className="flex w-full md:w-[50vw] flex-col justify-between min-h-dvh md:h-dvh py-6 md:py-8">
+        <Header />
+
+        <div className="md:hidden z-30 flex items-center justify-between px-4 py-4 w-full bg-green-950 text-2xl">
+            {currProject.title}
         </div>
+        <Slideshow images={currProject.images} />
+        {/* Mobile controls */}
+        <div className="md:hidden z-30 flex items-center justify-between px-4 ">
 
-        <div className="h-screen bg-green-950 flex align-items-center justify-between flex-col w-[450px] px-16 py-12">
-
-          <ChangeProject
+            <ChangeProject
             isNext={false}
             currProject={currProject}
             numProjects={projects.length}
             setProjectById={setProjectById}
-          />
+            />
 
-          <Description {...currProject} />
+            <button
+            onClick={() => setDescriptionOpen(true)}
+            className="rounded-full bg-green-950 px-5 py-3 text-white"
+            >
+            About
+            </button>
 
-          <ChangeProject
+            <ChangeProject
             isNext
             currProject={currProject}
             numProjects={projects.length}
             setProjectById={setProjectById}
-          />
+            />
 
         </div>
-      </main>
-    </div>
-  );
+
+        <Footer />
+      </div>
+
+      {/* Desktop sidebar */}
+      <div className="hidden md:flex h-screen bg-green-950 justify-between flex-col w-[450px] px-16 py-12">
+        <ChangeProject
+          isNext={false}
+          currProject={currProject}
+          numProjects={projects.length}
+          setProjectById={setProjectById}
+        />
+
+        <Description {...currProject} />
+
+        <ChangeProject
+          isNext
+          currProject={currProject}
+          numProjects={projects.length}
+          setProjectById={setProjectById}
+        />
+      </div>
+
+      
+
+      {/* Mobile description modal */}
+      {descriptionOpen && (
+        <div
+          className="md:hidden fixed inset-0 z-40 flex items-center justify-center bg-black/60 p-4"
+          onClick={() => setDescriptionOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-md max-h-[80vh] overflow-y-auto rounded-xl bg-green-950 p-6"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              onClick={() => setDescriptionOpen(false)}
+              className="absolute right-4 top-4 text-xl text-white"
+              aria-label="Close project description"
+            >
+              ✕
+            </button>
+
+            <Description {...currProject} />
+          </div>
+        </div>
+      )}
+
+    </main>
+  </div>
+);
 }
 
 // VISUALS:

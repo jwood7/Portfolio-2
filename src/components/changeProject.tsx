@@ -11,13 +11,13 @@ export function ChangeProject({isNext = false, numProjects, currProject, setProj
 
     if ((currProject.id >= numProjects -1 && !isNext) || (currProject.id == 0 && isNext)){
         return (
-            <Link href={`/${params.type}/gallery`} className=" text-xl h-[68px] text-center">
+            <Link href={`/${params.type}/gallery`} className=" md:w-full w-24 h-[68px] text-center md:text-xl">
                 View All Projects
             </Link>
         )
     } else if (isNext){
         return (
-            <button className="flex flex-col text-xl items-center justify-center" onClick={() => setProjectById(currProject.id-1)}>
+            <button className="flex flex-col md:w-full w-24 text-center md:text-xl items-center justify-center" onClick={() => setProjectById(currProject.id-1)}>
                 <div>Next Project</div>
                 <Image
                     width={40}
@@ -30,7 +30,7 @@ export function ChangeProject({isNext = false, numProjects, currProject, setProj
         )
     } else {
         return (
-            <button  className="flex flex-col text-xl items-center justify-center" onClick={() => setProjectById(currProject.id+1)}>
+            <button  className="flex flex-col md:w-full w-24 text-center md:text-xl  items-center justify-center" onClick={() => setProjectById(currProject.id+1)}>
                 <Image
                     width={40}
                     height={40}

@@ -1,0 +1,30 @@
+{
+  "id": 7,
+  "title": "Visualization: Counter-Strike 2 After-Match Heatmap",
+  "dates": ["Spring 2026"],
+  "link": "https://stats.geekfestclan.com/stats/heatmap/?curr_match=1289",
+  "tools": ["D3", "Django"],
+  "description": "An interactive map of events occurring during Counterstrike 2 matches, automatically updated after each game, and manually fitted to a provided radar image. Filterable by weapon, killers, victims, rounds, and teams.",
+  "images": [
+    {
+      "url": "/images/software/7_cs2_heatmap/heatmap1.png",
+      "alt": "Counter-Strike 2 heatmap screenshot"
+    },
+    {
+      "url": "/images/software/7_cs2_heatmap/heatmap2.png",
+      "alt": "Counter-Strike 2 heatmap screenshot, , one event is highlighted"
+    },
+    {
+      "url": "/images/software/7_cs2_heatmap/heatmap3.png",
+      "alt": "Counter-Strike 2 heatmap screenshot, one event is highlighted and labeled"
+    },
+    {
+      "url": "/images/software/7_cs2_heatmap/heatmap4.png",
+      "alt": "Counter-Strike 2 heatmap screenshot, filtered by weapon used"
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/7_cs2_heatmap/heatmap_thumb.png",
+    "alt": "Screenshot of Counter-Strike 2 map with events shown in circles and x's"
+  }
+}
