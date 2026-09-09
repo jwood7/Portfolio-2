@@ -24,7 +24,7 @@ export function Description({title="", dates=[], link, description="", source, t
             
             <div className='flex gap-5 w-full'>
                 {link && 
-                    <a href={link} className="flex gap-2">
+                    <a href={link} className="flex gap-2"  target="_blank" >
                         <Image
                             width={30}
                             height={30}
@@ -35,7 +35,7 @@ export function Description({title="", dates=[], link, description="", source, t
                     </a> 
                 }
                 {source && 
-                    <a href={source}  className="flex gap-2">
+                    <a href={source}  className="flex gap-2" target="_blank" >
                         <Image
                             width={30}
                             height={30}

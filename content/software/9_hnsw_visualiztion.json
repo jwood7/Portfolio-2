@@ -1,0 +1,26 @@
+{
+  "id": 9,
+  "title": "Visualization:  Hierarchical Navigable Small World",
+  "dates": ["January 2026", "June 2026"],
+  "link": "https://hnsw.jacobdouglaswood.com",
+  "tools": ["FAISS", "Three.js", "React", "Flask", "Sentence Transformers"],
+  "description": "An interactive 3D visualization of FAISS’s HNSW search algorithm that makes high-dimensional vector search easier to understand. I modified FAISS to record visited nodes during search, built a Python/Flask pipeline to generate embeddings and HNSW indexes for Gutenberg and Wikipedia datasets, and used PCA/UMAP for projection. The React and Three.js frontend lets users explore graph layers, run text searches, and visualize the query and search path in 3D.",
+  "images": [
+    {
+      "url": "/images/software/9_hnsw_visualization/HNSW1.png",
+      "alt": "A hierarchical graph of nodes, with multiple layers. A path through the graph is highlighted, represneting a search query."
+    },
+    {
+      "url": "/images/software/9_hnsw_visualization/HNSW2.png",
+      "alt": "A hierarchical graph of nodes, with multiple layers."
+    },
+    {
+      "url": "/images/software/9_hnsw_visualization/HNSW3.png",
+      "alt": "A hierarchical graph of nodes, with multiple layers. A path through the graph is highlighted, represneting a search query."
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/9_hnsw_visualization/HNSW_thumb.png",
+      "alt": "A hierarchical graph of nodes, with multiple layers."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": 8,
+  "title": "Website: This portolio site",
+  "dates": ["August 2026", "September 2026"],
+  "link": "https://jacobdouglaswood.com",
+  "tools": ["Nextjs", "React", "Typescript"],
+  "description": "This website you’re currently on! A portfolio built with Next.js to showcase my software, game development, and art projects. It includes project galleries, detailed writeups, image slideshows, responsive layouts, and dynamic routing for navigating between projects.",
+  "images": [
+    {
+      "url": "/images/software/8_portfolio_site/portfolio1.png",
+      "alt": "Screenshot of this website"
+    },
+    {
+      "url": "/images/software/8_portfolio_site/portfolio2.png",
+      "alt": "Screenshot of the gallery page of this website."
+    },
+    {
+      "url": "/images/software/8_portfolio_site/portfolio3.png",
+      "alt": "Mobile layout of this website."
+    }
+  ],
+  "thumbnail": {
+    "url": "/images/software/8_portfolio_site/portfolio_thumb.png",
+    "alt": "Screenshot of Counter-Strike 2 map with events shown in circles and x's"
+  }
+}

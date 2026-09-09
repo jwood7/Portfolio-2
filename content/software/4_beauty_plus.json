@@ -8,8 +8,16 @@
   "description": "A website built for a contract with the Beauty Plus Network using Gatsby, React, and TypeScript, based on an older WordPress site. Hosted on a DigitalOcean Droplet using NGINX and Ubuntu.",
   "images": [
     {
-      "url": "/images/software/4_beauty_plus/Beauty_Plus.png",
+      "url": "/images/software/4_beauty_plus/beautyplus1.png",
       "alt": "Beauty Plus Network website"
+    },
+    {
+      "url": "/images/software/4_beauty_plus/beautyplus2.png",
+      "alt": "Beauty Plus Network website"
+    },
+    {
+      "url": "/images/software/4_beauty_plus/beautyplus3.png",
+      "alt": "Beauty Plus Network mobile website"
     }
   ],
   "thumbnail": {
