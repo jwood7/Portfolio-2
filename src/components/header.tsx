@@ -34,7 +34,7 @@ export function Header() {
             rel="noreferrer"
             href="https://github.com/jwood7"
           >
-            GitHub ↗
+            GitHub ↗︎
           </a>
         </li>
       </ul>

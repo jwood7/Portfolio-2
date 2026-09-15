@@ -28,7 +28,7 @@ export function CaseStudy({ project, type, nextProject }: { project: Project; ty
       <main className="mx-auto w-[min(1160px,calc(100%-32px))] flex-1">
         <section className="pb-10 pt-14 md:pt-20">
           <Link href={`/${type}#work`} className="mb-7 inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-ink">
-            ← Back to projects
+            ←︎ Back to projects
           </Link>
           <div className="text-xs font-extrabold uppercase tracking-[.14em] text-accent-2">Case study</div>
           <h1 className="my-3 max-w-[900px] text-[clamp(2.4rem,6vw,4.6rem)] font-extrabold leading-[0.98]" style={{ letterSpacing: "-.03em" }}>
@@ -120,7 +120,7 @@ export function CaseStudy({ project, type, nextProject }: { project: Project; ty
           <div>
             <small className="block font-extrabold uppercase tracking-[.12em] text-muted">Next project</small>
             <h3 className="mt-1 text-2xl font-extrabold md:text-4xl" style={{ letterSpacing: "-.03em" }}>
-              {nextProject.title} →
+              {nextProject.title} →︎
             </h3>
           </div>
           <span className="inline-flex rounded-full bg-accent px-5 py-3 font-extrabold text-white">View next project</span>

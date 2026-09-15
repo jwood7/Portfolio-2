@@ -42,7 +42,7 @@ export function Hero() {
             href="#work"
             className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-bold text-white transition-transform hover:-translate-y-0.5"
           >
-            Explore my work ↓
+            Explore my work ↓︎
           </a>
           <a
             href="https://github.com/jwood7"

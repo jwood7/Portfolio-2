@@ -28,7 +28,7 @@ function FeatureCard({ project, type, reverse = false }: { project: Project; typ
           ))}
         </div>
         <Link href={`/${type}/${project.id}`} className="inline-flex items-center gap-2 font-extrabold text-ink transition-colors hover:text-accent">
-          {project.caseStudy ? "View case study" : "View project"} <span>→</span>
+          {project.caseStudy ? "View case study" : "View project"} <span>→︎</span>
         </Link>
       </div>
     </article>
@@ -60,7 +60,7 @@ function SecondaryCard({ project, type }: { project: Project; type: string }) {
           href={`/${type}/${project.id}`}
           className="mt-auto inline-flex items-center gap-2 text-sm font-extrabold text-ink transition-colors hover:text-accent"
         >
-          {project.caseStudy ? "View case study" : "View project"} <span>→</span>
+          {project.caseStudy ? "View case study" : "View project"} <span>→︎</span>
         </Link>
       </div>
     </article>

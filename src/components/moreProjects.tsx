@@ -46,7 +46,7 @@ export function MoreProjects({ projects, type }: { projects: Project[]; type: st
                 ))}
               </div>
               <span className="mt-auto pt-4 text-sm font-extrabold text-ink transition-colors group-hover:text-accent">
-                See project →
+                See project →︎
               </span>
             </div>
           </Link>

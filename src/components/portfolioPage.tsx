@@ -55,7 +55,7 @@ return (
           href={`/${type}#work`}
           className="inline-flex w-fit items-center gap-2 text-sm text-muted transition-colors hover:text-ink"
         >
-          ← Back to work
+          ←︎ Back to work
         </Link>
 
         <h1 className="md:hidden mt-4 text-2xl font-bold" style={{ letterSpacing: "-.02em" }}>

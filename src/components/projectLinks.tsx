@@ -18,7 +18,7 @@ export function ProjectLinks({
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5"
         >
-          View live site ↗
+          View live site ↗︎
         </a>
       )}
       {source && (
@@ -28,7 +28,7 @@ export function ProjectLinks({
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full border border-line bg-white/[0.03] px-4 py-2.5 text-sm font-bold text-ink transition-transform hover:-translate-y-0.5"
         >
-          Source ↗
+          Source ↗︎
         </a>
       )}
       {links?.map((extra) => (
@@ -39,7 +39,7 @@ export function ProjectLinks({
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full border border-line bg-white/[0.03] px-4 py-2.5 text-sm font-bold text-ink transition-transform hover:-translate-y-0.5"
         >
-          {extra.label} ↗
+          {extra.label} ↗︎
         </a>
       ))}
     </div>

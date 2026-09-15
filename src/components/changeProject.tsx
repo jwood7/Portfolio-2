@@ -33,9 +33,9 @@ export function ChangeProject({isNext = false, currProject, setProjectById, vari
                 onClick={() => setProjectById(target.id)}
             >
                 {isNext ? (
-                    <>Next <span aria-hidden="true">→</span></>
+                    <>Next <span aria-hidden="true">→︎</span></>
                 ) : (
-                    <><span aria-hidden="true">←</span> Previous</>
+                    <><span aria-hidden="true">←︎</span> Previous</>
                 )}
             </button>
         )
