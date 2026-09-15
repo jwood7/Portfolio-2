@@ -4,7 +4,8 @@
   "dates": ["Fall 2023"],
   "source": "https://github.com/jwood7/BalanceBot",
   "tools": ["Python", "REST APIs", "Discord"],
-  "description": "A Discord bot that connects to two separate APIs to gather player statistics and balance players between teams.",
+  "pitch": "A Discord bot that pulls player stats from two APIs and auto-balances teams before a match starts.",
+  "description": "A Discord bot that solves a recurring problem for a gaming community: putting together fair teams. It pulls player statistics from two separate APIs and uses them to balance players across teams automatically, saving the manual back-and-forth of picking teams by hand before each match.",
   "images": [
     {
       "url": "/images/software/2_balancebot/BalanceBot.png",

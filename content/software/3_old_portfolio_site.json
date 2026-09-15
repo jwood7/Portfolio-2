@@ -2,9 +2,11 @@
   "id": 3,
   "title": "Website: Previous Portfolio Site",
   "dates": ["Winter 2023"],
+  "link": "https://old.jacobdouglaswood.com",
   "source": "https://github.com/jwood7/Portfolio-Site",
   "tools": ["React", "NGINX", "Ubuntu", "DigitalOcean"],
-  "description": "A React application that displays my game design, art, and coding projects. Hosted on a DigitalOcean Droplet using NGINX and Ubuntu.",
+  "pitch": "My previous portfolio, self-hosted end to end on a DigitalOcean droplet.",
+  "description": "An earlier React portfolio showcasing my game design, art, and coding projects, self-hosted from scratch on a DigitalOcean droplet using NGINX and Ubuntu. It predates this Next.js version, but is where I first learned to own a deployment end to end rather than relying on a managed platform.",
   "images": [
     {
       "url": "/images/software/3_old_portfolio_site/PortfolioWebsite.png",

@@ -10,14 +10,12 @@ export interface ImageInfo{
 export function Slideshow({images}: {images: ImageInfo[]}) {
     const [currImage, setCurrImage] = useState(0);
     return (
-        <div className="flex flex-col items-center">
-            <Image
-                width={1200}
-                height={800}
+        <div className="flex flex-col items-center w-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
                 src={images[currImage].url}
                 alt={images[currImage].alt}
-                className="w-auto max-w-[90vw] max-h-[40vh] md:max-w-[50vw] md:max-h-[50vh] object-contain"
-                sizes="(max-width: 768px) 90vw, 50vw"
+                className="h-auto w-auto max-w-[90vw] max-h-[40vh] md:max-w-[50vw] md:max-h-[50vh] rounded-2xl border border-line"
                 />
             {images.length > 1 && (
             <div className="flex items-center gap-2 justify-center py-5">
@@ -38,7 +36,7 @@ export function Slideshow({images}: {images: ImageInfo[]}) {
                 {Array.from({ length: images.length }).map((_, index) => (
                 <div
                     key={"slide_" + index}
-                    className={`opacity-${index == currImage ? "100" : "50"} flex items-center`}
+                    className={`flex items-center ${index == currImage ? "opacity-100" : "opacity-50"}`}
                 >
                     <button onClick={() => setCurrImage(index)}>
                     <Image

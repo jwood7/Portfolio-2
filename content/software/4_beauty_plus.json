@@ -5,7 +5,17 @@
   "link": "https://beautyplusnetwork.org/",
   "source": "https://github.com/jwood7/beauty-plus-network",
   "tools": ["Gatsby", "React", "TypeScript", "NGINX", "Ubuntu"],
-  "description": "A website built for a contract with the Beauty Plus Network using Gatsby, React, and TypeScript, based on an older WordPress site. Hosted on a DigitalOcean Droplet using NGINX and Ubuntu.",
+  "tagline": "A client rebuild that traded WordPress for control",
+  "pitch": "A full rebuild of a nonprofit's WordPress site into a fast, maintainable Gatsby application, delivered as a freelance contract.",
+  "description": "A contract rebuild of the Beauty Plus Network's site, moving it off an aging WordPress install and onto a Gatsby, React, and TypeScript stack. I handled the build end to end: matching the existing content and branding, restructuring the pages for a cleaner information hierarchy, and hosting it myself on a DigitalOcean droplet with NGINX and Ubuntu, which cut hosting cost by 85%.",
+  "featuredRank": 3,
+  "caseStudy": {
+    "problem": "The Beauty Plus Network's existing WordPress site was slow to load and expensive for a nonprofit with limited technical resources to keep hosted and updated.",
+    "approach": "I rebuilt the site from scratch on Gatsby, React, and TypeScript, working directly from the client's existing content and brand guidelines so the new site felt familiar to visitors while being simpler to run underneath. I set up hosting myself on a DigitalOcean droplet with NGINX on Ubuntu instead of the client's previous managed WordPress hosting.",
+    "challenge": "The client wasn't technical, so the real work was translating a loosely structured WordPress site into a clean page hierarchy and a static build the client's small team could still request changes to, without losing any of the content they relied on.",
+    "result": "The client got a faster, static-generated site that cut hosting costs by 85% compared to the old WordPress plan. I got practical experience owning a freelance project end to end: scoping, building, deploying, and supporting a real client instead of a personal side project.",
+    "learned": "Build a lightweight CMS layer so the client can update content themselves instead of going through me for every change."
+  },
   "images": [
     {
       "url": "/images/software/4_beauty_plus/beautyplus1.png",

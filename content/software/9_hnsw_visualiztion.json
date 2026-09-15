@@ -4,7 +4,20 @@
   "dates": ["January 2026", "June 2026"],
   "link": "https://hnsw.jacobdouglaswood.com",
   "tools": ["FAISS", "Three.js", "React", "Flask", "Sentence Transformers"],
-  "description": "An interactive 3D visualization of FAISS’s HNSW search algorithm that makes high-dimensional vector search easier to understand. I modified FAISS to record visited nodes during search, built a Python/Flask pipeline to generate embeddings and HNSW indexes for Gutenberg and Wikipedia datasets, and used PCA/UMAP for projection. The React and Three.js frontend lets users explore graph layers, run text searches, and visualize the query and search path in 3D.",
+  "tagline": "Watch vector search find its answer in real time",
+  "pitch": "An interactive 3D visualization of FAISS's HNSW algorithm that shows exactly how a nearest-neighbor search moves through graph layers to find a result.",
+  "description": "An interactive 3D visualization that makes FAISS's HNSW search algorithm easy to see and understand. I forked and recompiled FAISS to record every node visited during a search, built a Python/Flask pipeline to generate embeddings and HNSW indexes over Gutenberg and Wikipedia datasets, and used PCA/UMAP to project them into 3D. The React and Three.js frontend lets users run real text searches and watch the query traverse graph layers toward its result.",
+  "featuredRank": 2,
+  "links": [
+    { "label": "FAISS fork (search trace)", "url": "https://github.com/jwood7/faiss-investigation" }
+  ],
+  "caseStudy": {
+    "problem": "HNSW is the algorithm behind most modern vector search, but it's usually explained with static diagrams of graph layers. Those diagrams don't show how a single query moves through the structure to reach its nearest neighbors.",
+    "approach": "I built a Flask pipeline that generates sentence embeddings and full HNSW indexes over the Gutenberg and Wikipedia datasets, then used PCA and UMAP to project those high-dimensional embeddings down to 3D coordinates. A React and Three.js frontend renders the resulting graph, so a real text query can be typed in and watched as it moves toward its answer.",
+    "challenge": "FAISS doesn't expose what happens inside a search, so getting a real traversal path meant going into its C++ HNSW implementation directly. I forked the library, dug through the search code, and added logic to record every node it visited and which layer each one belonged to. After recompiling FAISS with those changes, I ran searches against the modified build, which is what made it possible to show an actual search path through the graph instead of a simulated one.",
+    "result": "The final tool lets anyone type a search, watch the algorithm drop into the top layer and narrow down through each level, and see the visited path highlighted against the full graph. It's the visualization I wanted when I was first learning how vector search worked.",
+    "learned": "Let users compare two queries side by side to see how their search paths diverge, and expose graph parameters like M and efSearch so people can see how they change the shape of the graph."
+  },
   "images": [
     {
       "url": "/images/software/9_hnsw_visualization/HNSW1.png",

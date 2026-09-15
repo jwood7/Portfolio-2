@@ -1,33 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Site | Jacob Wood",
+  title: "Jacob Wood: Software Developer",
+  description:
+    "Jacob Wood builds useful, interactive software across full stack development, data, AI, visualization, and games.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
-      <body className="min-h-screen flex flex-col">
-        <div className="fixed inset-0 bg-linear-to-t from-green-600 via-emerald-950 to-black z-0" />
-        <div className="fixed inset-0 bg-linear-to-r from-black to-black/0 z-0" />
-
-        {children}
-      </body>
+    <html lang="en" className={`${inter.variable} antialiased`}>
+      <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );
 }

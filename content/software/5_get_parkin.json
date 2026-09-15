@@ -4,7 +4,8 @@
   "dates": ["Spring 2024"],
   "link": "https://www.figma.com/file/G2I6Ch6BnQPilwrtgFLn7O/Untitled?type=design&node-id=101-826&mode=design&t=yDr4Fc2xnrDtSjAc-0",
   "tools": ["Figma", "CSS"],
-  "description": "A frontend design for a mobile parking app accesible on web, created for a contract with MindIT. Designed in Figma and later implemented with CSS.",
+  "pitch": "A mobile-first parking app UI designed in Figma and built out in CSS for a client contract.",
+  "description": "A mobile-first frontend design for a parking assistant app, created under contract with MindIT. I designed the full flow in Figma and then implemented it with CSS, focused on a clean, approachable mobile UX for a genuinely practical everyday problem.",
   "images": [
     {
       "url": "/images/software/5_get_parkin/ParkingApp1.png",

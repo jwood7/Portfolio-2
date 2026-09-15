@@ -4,7 +4,8 @@
     "dates": ["Fall 2022"],
     "source": "https://github.com/jwood7/SpotifyMatchSite",
     "tools": ["React", "Express", "Javascript", "Socket.io"],
-    "description": "A website that matches you with a friend based on your Spotify listening history. Created for Web Development III during my bachelor's degree with a group of 5.",
+    "pitch": "Matches you with a friend based on how similar your Spotify listening history is.",
+    "description": "A website that matches users with a friend based on shared taste in their Spotify listening history, built with a team of five for Web Development III during my bachelor's degree. The app compares listening data between users and pairs people whose music taste overlaps, with a React frontend and an Express/Socket.io backend handling real-time chat between matches.",
     "images": [
       {"url": "/images/software/0_spotify_matching_site/Thotify1.png", "alt":"Spotify website matching page home screenshot"},
       {"url": "/images/software/0_spotify_matching_site/Thotify2.png", "alt":"Spotify website registration page screenshot"},

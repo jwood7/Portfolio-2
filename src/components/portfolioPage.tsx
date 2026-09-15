@@ -1,47 +1,12 @@
 "use client";
 import { useProjects } from "@/components/projectsProvider";
-import Image from "next/image";
 import { Description } from "@/components/description";
 import { Slideshow } from "@/components/slideshow";
-import { useState, useEffect } from "react";
 import { ChangeProject } from "@/components/changeProject";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { useParams, useRouter } from "next/navigation";
-import { Project } from "./description";
-
-
-const testData = [
-  {
-    "id": 0,
-    "title": "Title1OLD",
-    "dates": ["1/11","1/22"],
-    "link": "https://jacobdouglaswood.com",
-    "source": "https://github.com/jwood7",
-    "tools": ["python", "javascript"],
-    "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
-  },
-  {
-    "id": 1,
-    "title": "Title2",
-    "dates": ["1/11","1/22"],
-    "link": "https://jacobdouglaswood.com",
-    "tools": ["python", "javascript"],
-    "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
-  },
-  {
-    "id": 2,
-    "title": "Title3",
-    "dates": ["1/11","1/22"],
-    "link": "https://jacobdouglaswood.com",
-    "tools": ["python", "javascript"],
-    "description": "Description ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "images": [{"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}, {"url": "/images/software/Visualization1.png", "alt":"Visualization of counter strike 2 states"}]
-  },
-]
-
+import Link from "next/link";
 
 export function PortfolioPage() {
   const { projects } = useProjects();
@@ -50,8 +15,6 @@ export function PortfolioPage() {
     type: string;
     id: string;
   }>();
-
-  const [descriptionOpen, setDescriptionOpen] = useState(false);
 
   const router = useRouter();
 
@@ -77,52 +40,64 @@ export function PortfolioPage() {
   }
 
 return (
-  <div className="flex flex-col flex-1 items-center justify-center font-sans z-10">
-    <main className="relative flex flex-1 w-full flex-col md:flex-row items-center justify-center gap-[4vw]">
+  <div className="flex flex-1 flex-col items-center font-sans z-10">
+    <div className="sticky top-0 z-40 w-full border-b border-line bg-bg/75 backdrop-blur-xl">
+      <div className="mx-auto w-[min(1160px,calc(100%-32px))]">
+        <Header />
+      </div>
+    </div>
+
+    <main className="relative flex flex-1 w-full flex-col items-stretch justify-start md:flex-row md:items-center md:justify-center gap-[4vw]">
 
       {/* Main content */}
-      <div className="flex w-full md:w-[50vw] flex-col justify-between min-h-dvh md:h-dvh py-6 md:py-8">
-        <Header />
+      <div className="flex w-full md:w-[50vw] flex-col md:justify-between md:h-[calc(100dvh-57px)] py-6 md:py-8 px-4 md:px-0">
+        <Link
+          href={`/${type}#work`}
+          className="inline-flex w-fit items-center gap-2 text-sm text-muted transition-colors hover:text-ink"
+        >
+          ← Back to work
+        </Link>
 
-        <div className="md:hidden z-30 flex items-center justify-between px-4 py-4 w-full bg-green-950 text-2xl">
-            {currProject.title}
+        <h1 className="md:hidden mt-4 text-2xl font-bold" style={{ letterSpacing: "-.02em" }}>
+          {currProject.title}
+        </h1>
+
+        <div className="mt-4 md:mt-0">
+          <Slideshow images={currProject.images} />
         </div>
-        <Slideshow images={currProject.images} />
-        {/* Mobile controls */}
-        <div className="md:hidden z-30 flex items-center justify-between px-4 ">
 
+        {/* Mobile: description scrolls in the normal page flow */}
+        <div className="md:hidden mt-6">
+          <Description {...currProject} showTitle={false} />
+        </div>
+
+        {/* Mobile: prev/next controls */}
+        <div className="md:hidden mt-6 flex items-center gap-3">
             <ChangeProject
+            variant="pill"
             isNext={false}
             currProject={currProject}
-            numProjects={projects.length}
             setProjectById={setProjectById}
             />
-
-            <button
-            onClick={() => setDescriptionOpen(true)}
-            className="rounded-full bg-green-950 px-5 py-3 text-white"
-            >
-            About
-            </button>
 
             <ChangeProject
+            variant="pill"
             isNext
             currProject={currProject}
-            numProjects={projects.length}
             setProjectById={setProjectById}
             />
-
         </div>
 
-        <Footer />
+        <div className="mt-8 md:mt-0">
+          <Footer />
+        </div>
       </div>
 
       {/* Desktop sidebar */}
-      <div className="hidden md:flex h-screen bg-green-950 justify-between flex-col w-[450px] px-16 py-12">
+      <div className="hidden md:flex md:h-[calc(100dvh-57px)] bg-panel border-l border-line justify-between flex-col w-[450px] px-16 py-12">
         <ChangeProject
           isNext={false}
           currProject={currProject}
-          numProjects={projects.length}
           setProjectById={setProjectById}
         />
 
@@ -131,46 +106,11 @@ return (
         <ChangeProject
           isNext
           currProject={currProject}
-          numProjects={projects.length}
           setProjectById={setProjectById}
         />
       </div>
-
-      
-
-      {/* Mobile description modal */}
-      {descriptionOpen && (
-        <div
-          className="md:hidden fixed inset-0 z-40 flex items-center justify-center bg-black/60 p-4"
-          onClick={() => setDescriptionOpen(false)}
-        >
-          <div
-            className="relative w-full max-w-md max-h-[80vh] overflow-y-auto rounded-xl bg-green-950 p-6"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              onClick={() => setDescriptionOpen(false)}
-              className="absolute right-4 top-4 text-xl text-white"
-              aria-label="Close project description"
-            >
-              ✕
-            </button>
-
-            <Description {...currProject} />
-          </div>
-        </div>
-      )}
 
     </main>
   </div>
 );
 }
-
-// VISUALS:
-// Fix colors/theme 
-// Animations on slide and project change
-
-// FUNCTIONALITY: 
- // Setup order of projects somehow -> Wwill just prepend filenames with id number for now
-// Show all projects
-// ABout page

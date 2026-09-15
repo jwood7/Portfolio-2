@@ -1,9 +1,5 @@
-import { PortfolioPage } from "@/components/portfolioPage";
+import { ProjectDetail } from "@/components/projectDetail";
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ type: string; id: string }>;
-}) {
-  return <PortfolioPage/>;
+export default function Page() {
+  return <ProjectDetail />;
 }

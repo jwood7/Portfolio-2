@@ -4,7 +4,17 @@
   "dates": ["Spring 2026"],
   "link": "https://stats.geekfestclan.com/stats/heatmap/?curr_match=1289",
   "tools": ["D3", "Django"],
-  "description": "An interactive map of events occurring during Counterstrike 2 matches, automatically updated after each game, and manually fitted to a provided radar image. Filterable by weapon, killers, victims, rounds, and teams.",
+  "tagline": "See exactly where every match was won and lost",
+  "pitch": "An interactive heatmap that plots every kill, death, and utility throw from a Counter-Strike 2 match onto the in-game radar, filterable by weapon, player, round, and team.",
+  "description": "Built for the small Counter-Strike 2 community I play in, which runs three competitive matches a week. Every match is logged automatically, and I manually align the event coordinates to each map's radar image afterward. The result is an interactive D3 heatmap where players can filter kills, deaths, and utility throws by weapon, killer, victim, round, and team to see patterns a scoreboard doesn't show.",
+  "featuredRank": 1,
+  "caseStudy": {
+    "problem": "Post-match stats pages show who won each round, but not where or why. With only three competitive matches a week and no one going back to rewatch demos, the same positioning mistakes and wasted utility throws were easy to repeat without anyone noticing the pattern.",
+    "approach": "Every match on the server gets logged automatically, but there's no consistent source of truth for the radar images themselves: admins upload them on a separate page and the site pulls them in automatically, so scale and placement differ from map to map. I built a calibration tool that saves a radar's scale and offset per map, so once a map has been calibrated, every future match on it reuses that saved calibration automatically. Only a map we haven't played before needs a manual pass. The result is served through a Django backend and rendered with D3 as an interactive heatmap overlaid on the map.",
+    "challenge": "The filtering is the part worth getting right. A single match produces hundreds of events, so the heatmap lets players narrow that down by weapon, by killer or victim, by round, or by team, and combine those filters together. Filtering by weapon shows which ranges and locations a player or weapon performs well at, which helps someone pick a loadout suited to the map and where they plan to play that round. Filtering by round turns the same data into a breakdown of exactly what happened, position by position.",
+    "result": "The heatmap runs after every match and gets used by players reviewing their own games each week, alongside the scoreboard rather than in place of it. It adds a detailed, round-by-round breakdown of positioning the scoreboard alone doesn't show, and that data feeds directly into gameplay improvements.",
+    "learned": "Pull each map's radar directly from the game files or its Steam Workshop page instead of relying on an admin upload, so the scale is consistent from the start and even a new map doesn't need a manual calibration pass."
+  },
   "images": [
     {
       "url": "/images/software/7_cs2_heatmap/heatmap1.png",

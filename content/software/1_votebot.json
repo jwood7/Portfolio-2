@@ -4,7 +4,8 @@
     "dates": ["Summer 2023"],
     "source": "https://github.com/jwood7/VoteBot",
     "tools": ["Python", "Discord"],
-    "description": "A discord bot that allows users to rate Counterstrike maps on a scale of 1-5 on the site stats.geekfestclan.com, and then displays the results. It also retrieves the workshop id of the map for admins to use to open the map in-game.",
+    "pitch": "A Discord bot that lets a competitive CS2 community vote on maps and pulls up the exact workshop version to load.",
+    "description": "A Discord bot built for a Counter-Strike 2 community so players can vote on which map to play next, rating each option from 1-5 directly in Discord. Results feed into stats.geekfestclan.com, and the bot also looks up each map's Steam Workshop ID so admins can load the right version in-game without hunting for it manually.",
     "images": [
       {"url": "/images/software/1_votebot/VoteBot.png", "alt":"Screenshot of Discord with a bot asking the user to vote on Counterstrike 2 maps"}
     ],
