@@ -3,6 +3,7 @@
   "title": "Website: This portfolio site",
   "dates": ["August 2026", "September 2026"],
   "link": "https://jacobdouglaswood.com",
+  "source": "https://github.com/jwood7/Portfolio-2",
   "tools": ["Nextjs", "React", "Typescript"],
   "pitch": "This site: a Next.js portfolio with dynamic routing, case studies, and image slideshows.",
   "description": "This website you're on right now. Built with Next.js to showcase my software, game development, and art projects, with dynamically routed project pages, image slideshows, and a curated homepage instead of a flat list of thumbnails. It's also the project I keep iterating on whenever I want to try something new in the frontend.",
