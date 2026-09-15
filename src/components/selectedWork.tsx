@@ -75,15 +75,9 @@ export function SelectedWork({ projects, type }: { projects: Project[]; type: st
 
   return (
     <section id="work" className="scroll-mt-24 py-16 md:py-20">
-      <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">
-        <h2 className="text-[clamp(2rem,4vw,3.4rem)] font-extrabold leading-none" style={{ letterSpacing: "-.04em" }}>
-          Selected work
-        </h2>
-        <p className="max-w-[520px] text-muted">
-          A few projects that best show how I think: start with a real problem, build something useful, and make the interaction
-          easy to understand.
-        </p>
-      </div>
+      <h2 className="mb-8 text-[clamp(2rem,4vw,3.4rem)] font-extrabold leading-none md:mb-10" style={{ letterSpacing: "-.04em" }}>
+        Selected work
+      </h2>
 
       <div className="flex flex-col gap-5">
         <FeatureCard project={hero} type={type} />

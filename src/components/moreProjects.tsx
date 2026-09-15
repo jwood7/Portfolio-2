@@ -7,15 +7,9 @@ export function MoreProjects({ projects, type }: { projects: Project[]; type: st
 
   return (
     <section id="more" className="scroll-mt-24 py-16 md:py-20">
-      <div className="mb-8 flex flex-col gap-3 md:mb-10 md:flex-row md:items-end md:justify-between">
-        <h2 className="text-[clamp(1.8rem,3.4vw,2.8rem)] font-extrabold leading-none" style={{ letterSpacing: "-.04em" }}>
-          More things I&apos;ve built
-        </h2>
-        <p className="max-w-[520px] text-muted">
-          Not every project needs a giant case study. The goal here is to show range without making everything compete equally
-          for attention.
-        </p>
-      </div>
+      <h2 className="mb-8 text-[clamp(1.8rem,3.4vw,2.8rem)] font-extrabold leading-none md:mb-10" style={{ letterSpacing: "-.04em" }}>
+        More things I&apos;ve built
+      </h2>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {sorted.map((project) => (
