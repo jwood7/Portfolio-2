@@ -8,6 +8,7 @@
   "pitch": "An interactive 3D visualization of FAISS's HNSW algorithm that shows exactly how a nearest-neighbor search moves through graph layers to find a result.",
   "description": "An interactive 3D visualization that makes FAISS's HNSW search algorithm easy to see and understand. I forked and recompiled FAISS to record every node visited during a search, built a Python/Flask pipeline to generate embeddings and HNSW indexes over Gutenberg and Wikipedia datasets, and used PCA/UMAP to project them into 3D. The React and Three.js frontend lets users run real text searches and watch the query traverse graph layers toward its result.",
   "featuredRank": 2,
+  "source": "https://github.com/jwood7/HNSW-Visualization",
   "links": [
     { "label": "FAISS fork (search trace)", "url": "https://github.com/jwood7/faiss-investigation" }
   ],
